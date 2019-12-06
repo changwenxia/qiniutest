@@ -1,34 +1,50 @@
 <template>
- <el-upload
-    style='position: relative;top: 10px;height: 120px;'
-    :file-list='fileList'
-    class="avatar-uploader"
-    :limit='1'
-    :action="uploadUrl"
-    accept="image/jpeg,image/gif,image/png,image/bmp"
-    list-type="picture-card"
-    :data='uploadData'
-    :on-success="handleAvatarSuccess"
-    :on-error="uploadError"
-    :before-upload="beforeAvatarUpload"
-    :on-preview="doLookImg"
-    :on-remove="doDeleteImg">
-    <i class="el-icon-plus"></i>
-  </el-upload>
+  <div>
+    <el-table
+      :data="tableData"
+      style="width: 100%">
+      <el-table-column
+        prop="date"
+        label="日期"
+        width="180">
+      </el-table-column>
+      <el-table-column
+        prop="name"
+        label="姓名"
+        width="180">
+      </el-table-column>
+      <el-table-column
+        prop="address"
+        label="地址">
+      </el-table-column>
+    </el-table>
+  </div>
 </template>
 
 <script>
+
 export default {
+  name: 'home',
   data() {
     return {
-      actionPath:'https://up-z1.qiniup.com',
-      imageUrl: '',
-      postData: {},
+      tableData: [{
+            date: '2016-05-02',
+            name: '王小虎',
+            address: '上海市普陀区金沙江路 1518 弄'
+          }, {
+            date: '2016-05-04',
+            name: '王小虎',
+            address: '上海市普陀区金沙江路 1517 弄'
+          }, {
+            date: '2016-05-01',
+            name: '王小虎',
+            address: '上海市普陀区金沙江路 1519 弄'
+          }, {
+            date: '2016-05-03',
+            name: '王小虎',
+            address: '上海市普陀区金沙江路 1516 弄'
+          }]
     };
-  },
-  created() {
-  },
-  methods: {
-      },
   }
+};
 </script>

@@ -1,11 +1,6 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <!-- <iframe src="localhost:8005/index" frameborder="0"></iframe> -->
-      <router-link to="/">Home</router-link> |
-      <!-- <router-link to="/about">About</router-link> -->
-    </div>
-    <router-view/>
+  <div id="aa">
+    testsdfasf
   </div>
 </template>
 

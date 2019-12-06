@@ -1178,6 +1178,14 @@
     "@webassemblyjs/wast-parser" "1.8.5"
     "@xtuc/long" "4.2.2"
 
+"@xiyun/element-ui@^1.2.41":
+  version "1.2.41"
+  resolved "https://registry.yarnpkg.com/@xiyun/element-ui/-/element-ui-1.2.41.tgz#34745dd6fdfdb32a0b518e9c386b2b64e6e82f62"
+  integrity sha512-tOuWZum529uUw/xacz0v73fC3PX1dET626QNrpwnxizn36vlZa2hzNPa6UixJLNeSi98WNRH3U095QvYP3MP+w==
+  dependencies:
+    element-ui "~2.7.2"
+    lodash "^4.17.11"
+
 "@xiyun/xy-plugin-upload@^1.3.22":
   version "1.3.22"
   resolved "https://registry.yarnpkg.com/@xiyun/xy-plugin-upload/-/xy-plugin-upload-1.3.22.tgz#0600e9ac89557d1b4b7a50c16df9703d4d982772"
@@ -3020,6 +3028,18 @@ element-ui@^2.12.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/element-ui/-/element-ui-2.12.0.tgz#a893bc11ae4f7dbb7e9d541606f23e643f131ee4"
   integrity sha512-DapyT0PW4i/1ETPHk8K8Qbe8B6hj10+dXsRTrOTFryV9wAs6e9mCxbV65awokyR2/v/KuIHJmqX+mH3wUa4rOQ==
+  dependencies:
+    async-validator "~1.8.1"
+    babel-helper-vue-jsx-merge-props "^2.0.0"
+    deepmerge "^1.2.0"
+    normalize-wheel "^1.0.1"
+    resize-observer-polyfill "^1.5.0"
+    throttle-debounce "^1.0.1"
+
+element-ui@~2.7.2:
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/element-ui/-/element-ui-2.7.2.tgz#8bc5bef5c3c53a2170422516b4324e70069c23d1"
+  integrity sha512-Exh9QTkm9gwMMPzg1TyaTlBKyr3k4K9XcC5vl0A/mneDvJX//RsURGuOWsCNDVQMdhh5h9e+W5icosh+pKfbCg==
   dependencies:
     async-validator "~1.8.1"
     babel-helper-vue-jsx-merge-props "^2.0.0"
