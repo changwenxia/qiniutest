@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-table
+    <!-- <el-table
       :data="tableData"
       style="width: 100%">
       <el-table-column
@@ -17,7 +17,7 @@
         prop="address"
         label="地址">
       </el-table-column>
-    </el-table>
+    </el-table> -->
   </div>
 </template>
 

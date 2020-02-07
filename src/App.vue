@@ -2,13 +2,23 @@
   <div id="app">
     <div id="nav">
       <!-- <iframe src="localhost:8005/index" frameborder="0"></iframe> -->
-      <router-link to="/">Home</router-link> |
+      <!-- <router-link to="/">Home</router-link> | -->
       <!-- <router-link to="/about">About</router-link> -->
+      <event-page></event-page>
     </div>
     <router-view/>
   </div>
 </template>
 
+<script>
+import EventPage from '@/views/EventPageEditing.vue';
+
+export default {
+  components: {
+    EventPage,
+  },
+}
+</script>
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
